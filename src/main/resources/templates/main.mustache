@@ -1,0 +1,22 @@
+<html>
+
+<body>
+<div>
+    <form method="post">
+        <input type="text" name="tittle" placeholder="tittle"/>
+        <input type="text" name="content" placeholder="content">
+        <button type="submit">Add</button>
+    </form>
+</div>
+<div>Message list</div>
+
+{{#notes}}
+    <div>
+        <b>{{id}}</b>
+        <span>{{tittle}}</span>
+        <i>{{content}}</i>
+    </div>
+{{/notes}}
+
+</body>
+</html>
