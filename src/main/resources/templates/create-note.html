@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create New User</title>
+  <link th:href="@{/static/css/style.css}" rel="stylesheet"/>
+  </script>
+</head>
+<body>
+  <form method="post" action="/create-note">
+    <label for="tittle">Tittle</label>
+    <input name="tittle" type="text" id="tittle">
+
+    <br>
+
+    <label for="content">Content</label>
+    <input name="content" type="text" id="content">
+
+    <br>
+    <input type="submit" value="Add note">
+
+    <br>
+  </form>
+</body>
+</html>
