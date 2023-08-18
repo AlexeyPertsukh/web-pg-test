@@ -10,13 +10,11 @@ import org.springframework.stereotype.Component;
 public class DtoToUserMapper implements Mapper<UserDto, User> {
     @Override
     public User map(UserDto userDto) {
-        User user = User.builder()
+        return User.builder()
                 .id(userDto.getId())
                 .login(userDto.getLogin())
                 .email(userDto.getEmail())
                 .role(Role.USER)
                 .build();
-
-        return user;
     }
 }
