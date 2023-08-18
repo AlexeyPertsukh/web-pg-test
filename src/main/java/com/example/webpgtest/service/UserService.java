@@ -1,6 +1,7 @@
 package com.example.webpgtest.service;
 
 import com.example.webpgtest.domain.User;
+import com.example.webpgtest.dto.UserDto;
 import org.hibernate.service.Service;
 
 import java.util.List;
@@ -10,7 +11,7 @@ public interface UserService {
     Iterable<User> findAll();
     Optional<User> findById(long id);
     void deleteById(long id);
-    User create(User user);
+    User create(UserDto userDto);
 
-    Optional<User> update(Long id, User user);
+    Optional<UserDto> update(Long id, UserDto userDto);
 }
