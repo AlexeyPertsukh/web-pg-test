@@ -1,10 +1,8 @@
 package com.example.webpgtest.service;
 
-import com.example.webpgtest.domain.User;
+import com.example.webpgtest.entity.User;
 import com.example.webpgtest.dto.UserDto;
-import org.hibernate.service.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface UserService {

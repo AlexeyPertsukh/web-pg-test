@@ -1,9 +1,9 @@
 package com.example.webpgtest.service.impl;
 
-import com.example.webpgtest.domain.User;
+import com.example.webpgtest.entity.User;
 import com.example.webpgtest.dto.UserDto;
-import com.example.webpgtest.mapper.DtoToUserMapper;
-import com.example.webpgtest.mapper.UserToDtoMapper;
+import com.example.webpgtest.mapper.user_mapper.DtoToUserMapper;
+import com.example.webpgtest.mapper.user_mapper.UserToDtoMapper;
 import com.example.webpgtest.repository.UserRepository;
 import com.example.webpgtest.service.UserService;
 import lombok.RequiredArgsConstructor;

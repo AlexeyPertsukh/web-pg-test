@@ -1,4 +1,4 @@
-package com.example.webpgtest.domain;
+package com.example.webpgtest.entity;
 
 import java.io.Serializable;
 

@@ -1,6 +1,6 @@
 package com.example.webpgtest.controller;
 
-import com.example.webpgtest.domain.User;
+import com.example.webpgtest.entity.User;
 import com.example.webpgtest.dto.UserDto;
 import com.example.webpgtest.service.UserService;
 import lombok.RequiredArgsConstructor;
