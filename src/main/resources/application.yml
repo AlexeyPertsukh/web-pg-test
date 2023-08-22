@@ -1,6 +1,21 @@
-spring.datasource:
-  url: jdbc:postgresql://localhost:5432/notebook
-  username: postgres
-  password: 123
+spring:
 
-spring.jpa.generate-ddl: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/notebook
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
+
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: validate
+    database: postgresql
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+logging.level:
+  root: INFO
+  org.springframework.security: DEBUG

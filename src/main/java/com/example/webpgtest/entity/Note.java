@@ -18,5 +18,7 @@ public class Note implements BaseEntity<Long>{
     private Long id;
     private String title;
     private String content;
+    @ManyToOne
+    private User user;
 
 }
